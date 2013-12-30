@@ -120,9 +120,9 @@ In no specific order.... It's whatever I feel like doing that day, unless someon
 - [X] Archive Locations
 - [ ] Anymore???
 
-[ ] Modular
+[X] Modular
 
-- [O] I have a basic "plugin" feature, but not what I want for the end result.
+- [X] Now supports a plugin style feature set where people can write their own plugins. If you write one let me know and I will add it to the repo.
 
 [ ] Program Input/Output
 
