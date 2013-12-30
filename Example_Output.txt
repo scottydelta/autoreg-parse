@@ -19,7 +19,7 @@ RegPath: Microsoft\Windows\CurrentVersion\Run
 
 
 
-python autoreg-parse.py -p services -soft goog/software -nt goog/NTUSER.DAT -sys goog/system 
+python autoreg-parse.py -p services -sys goog/system 
 
 Hint...the malware is a service....
 
@@ -66,7 +66,7 @@ Image Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83
 
 
 
-python autoreg-parse.py -p userassist -soft goog/software -nt goog/NTUSER.DAT -sys goog/system 
+python autoreg-parse.py -p userassist -nt goog/NTUSER.DAT 
 
 ===================================================
 USER ASSIST
