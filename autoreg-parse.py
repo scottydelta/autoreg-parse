@@ -4,13 +4,8 @@ Email: patrickolsen@sysforensics.org
 Twitter: @patrickrolsen
 '''
 import sys
-import hashlib
-import codecs
-import re
 import argparse
 from Registry import Registry
-from collections import defaultdict
-from itertools import izip
 
 
 parser = argparse.ArgumentParser(description='Parse the Windows registry for malware-ish related artifacts.')
