@@ -48,7 +48,6 @@ def main():
         sys.path.insert(0, 'plugins')
         module = __import__(plugin_filename)
         module.getPlugin(reg_nt=reg_nt, reg_soft=reg_soft, reg_sys=reg_sys)
-
     except:
         print "No Plugin Found."
 if __name__ == "__main__":
