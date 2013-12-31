@@ -4,29 +4,28 @@ def getPlugin(reg_soft, reg_nt='', reg_sys=''):
 
     print ("\n" + ("=" * 51) + "\nWINDOWS LOGON\n" + ("=" * 51))
 
-    winlogon_list = ["Microsoft\\Windows NT\\CurrentVersion",
-                     "Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Notify"]
+    winlogon_list = ["Microsoft\\Windows NT\\CurrentVersion\\Winlogon"]
+    white_list = ["explorer.exe", "c:\windows\system32\userinit.exe,"]
 
     try:
         for k in winlogon_list:
             key = reg_soft.open(k)
-            winlogon_subkeys = key.subkeys()
-            for subK in winlogon_subkeys:
-                if subK.name() == "Winlogon":
-                    winlogon_path = "Microsoft\\Windows NT\\CurrentVersion\Winlogon"
-                    for winlogon_values in subK.values():
-                        if winlogon_values.name() == "Shell":
-                            print 'Key: %s\nValue: %s\nRegPath: %s\n' % (subK.name(), subK.value("Shell").value(), winlogon_path)
-                        else:
-                            pass
-                        if winlogon_values.name() == "Userinit":
-                            print 'Key: %s\nValue: %s\nRegPath: %s\n' % (subK.name(), subK.value("Userinit").value(), winlogon_path)
-                        else:
-                            pass
-                        if winlogon_values.name() == "Taskman":
-                            print 'Key: %s\nValue: %s\nRegPath: %s\n' % (winlogon_values.name() == "Taskman", winlogon_path)
-                        else:
-                            pass
+
+            for v in key.values():
+                if v.name().lower() == "shell":
+                    if v.value().lower() != white_list[0]:
+                        print 'ALERT!!!\nKey Name: %s\nValue: %s\nLastWrite: %s\n' % (v.name(), v.value(), key.timestamp())
+                    else:
+                        print 'Key Name: %s\nValue: %s\nLastWrite: %s\n' % (v.name(), v.value(), key.timestamp())
+                
+                elif v.name().lower() == "userinit":
+                    if v.value().lower() != white_list[1]:
+                        print 'ALERT!!!\nKey Name: %s\nValue: %s\nLastWrite: %s\n' % (v.name(), v.value(), key.timestamp())
+                    else:
+                        print 'Key Name: %s\nValue: %s\nLastWrite: %s\n' % (v.name(), v.value(), key.timestamp())
+                
+                elif v.name().lower() == "taskman":
+                    print 'Key Name: %s\nValue: %s\nLastWrite: %s\n' % (v.name(), v.value(), key.timestamp())
                 else:
                     pass
 
