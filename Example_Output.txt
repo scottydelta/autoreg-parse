@@ -31,55 +31,56 @@ Name: . etadpug
 Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
 Time: 2013-10-17 11:46:43.680927
 
+
 ===================================================
 TYPE 2 SERVICES NOT IN SYSTEM32
 ===================================================
-Display: HWDeviceService.exe
+Disp: HWDeviceService.exe
 Name: hwdeviceservice.exe
 Path: "c:\documents and settings\all users\application data\datacardservice\hwdeviceservice.exe" -/service
 Time: 2013-10-17 04:06:56.718750
 
-Display: LMIGuardianSvc
+Disp: LMIGuardianSvc
 Name: lmiguardiansvc
 Path: "c:\program files\logmein\x86\lmiguardiansvc.exe"
 Time: 2013-10-17 04:06:56.734373
 
-Display: LogMeIn Kernel Information Provider
+Disp: LogMeIn Kernel Information Provider
 Name: lmiinfo   
 Path: \??\c:\program files\logmein\x86\rainfo.sys
 Time: 2013-10-17 04:06:56.734373
 
-Display: LogMeIn Maintenance Service
+Disp: LogMeIn Maintenance Service
 Name: lmimaint  
 Path: "c:\program files\logmein\x86\ramaint.exe"
 Time: 2013-10-17 04:06:56.734373
 
-Display: LogMeIn   
+Disp: LogMeIn   
 Name: logmein   
 Path: "c:\program files\logmein\x86\logmein.exe"
 Time: 2013-10-17 04:06:56.734373
 
-Display: ???       
+Disp: ???       
 Name: parvdm    
 Path: no image path found!
 Time: 2013-10-17 04:06:56.734373
 
-Display: Memory Control Driver
+Disp: Memory Control Driver
 Name: vmmemctl  
 Path: \??\c:\program files\common files\vmware\drivers\memctl\vmmemctl.sys
 Time: 2013-10-17 04:06:56.734373
 
-Display: VMware Tools
+Disp: VMware Tools
 Name: vmtools   
 Path: "c:\program files\vmware\vmware tools\vmtoolsd.exe"
 Time: 2013-10-17 04:06:56.734373
 
-Display: VMware Physical Disk Helper Service
+Disp: VMware Physical Disk Helper Service
 Name: vmware physical disk helper service
 Path: "c:\program files\vmware\vmware tools\vmacthlp.exe"
 Time: 2013-10-17 04:06:56.734373
 
-Display: Google Update Service (gupdate)
+Disp: Google Update Service (gupdate)
 Name: . etadpug
 Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
 Time: 2013-10-17 11:46:43.680927
