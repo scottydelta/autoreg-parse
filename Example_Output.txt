@@ -23,48 +23,66 @@ python autoreg-parse.py -p services -sys goog/system
 
 Hint...the malware is a service....
 
-
 ===================================================
 UNKNOWN/NON-BASELINED TYPE 2 SERVICES)
 ===================================================
-Service Name: . etadpug
-Image Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
-
+Disp: Google Update Service (gupdate)
+Name: . etadpug
+Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
+Time: 2013-10-17 11:46:43.680927
 
 ===================================================
 TYPE 2 SERVICES NOT IN SYSTEM32
 ===================================================
-Service Name: hwdeviceservice.exe
-Image Path: "c:\documents and settings\all users\application data\datacardservice\hwdeviceservice.exe" -/service
+Display: HWDeviceService.exe
+Name: hwdeviceservice.exe
+Path: "c:\documents and settings\all users\application data\datacardservice\hwdeviceservice.exe" -/service
+Time: 2013-10-17 04:06:56.718750
 
-Service Name: lmiguardiansvc
-Image Path: "c:\program files\logmein\x86\lmiguardiansvc.exe"
+Display: LMIGuardianSvc
+Name: lmiguardiansvc
+Path: "c:\program files\logmein\x86\lmiguardiansvc.exe"
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: lmiinfo
-Image Path: \??\c:\program files\logmein\x86\rainfo.sys
+Display: LogMeIn Kernel Information Provider
+Name: lmiinfo   
+Path: \??\c:\program files\logmein\x86\rainfo.sys
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: lmimaint
-Image Path: "c:\program files\logmein\x86\ramaint.exe"
+Display: LogMeIn Maintenance Service
+Name: lmimaint  
+Path: "c:\program files\logmein\x86\ramaint.exe"
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: logmein
-Image Path: "c:\program files\logmein\x86\logmein.exe"
+Display: LogMeIn   
+Name: logmein   
+Path: "c:\program files\logmein\x86\logmein.exe"
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: parvdm
-Image Path: no image path found!
+Display: ???       
+Name: parvdm    
+Path: no image path found!
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: vmmemctl
-Image Path: \??\c:\program files\common files\vmware\drivers\memctl\vmmemctl.sys
+Display: Memory Control Driver
+Name: vmmemctl  
+Path: \??\c:\program files\common files\vmware\drivers\memctl\vmmemctl.sys
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: vmtools
-Image Path: "c:\program files\vmware\vmware tools\vmtoolsd.exe"
+Display: VMware Tools
+Name: vmtools   
+Path: "c:\program files\vmware\vmware tools\vmtoolsd.exe"
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: vmware physical disk helper service
-Image Path: "c:\program files\vmware\vmware tools\vmacthlp.exe"
+Display: VMware Physical Disk Helper Service
+Name: vmware physical disk helper service
+Path: "c:\program files\vmware\vmware tools\vmacthlp.exe"
+Time: 2013-10-17 04:06:56.734373
 
-Service Name: . etadpug
-Image Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
-
-
+Display: Google Update Service (gupdate)
+Name: . etadpug
+Path: "c:\program files\google\desktop\install\{0f91adea-a35c-b700-d36c-83378aa58eea}\   \   \\{0f91adea-a35c-b700-d36c-83378aa58eea}\googleupdate.exe" <
+Time: 2013-10-17 11:46:43.680927
 
 python autoreg-parse.py -p userassist -nt goog/NTUSER.DAT 
 
