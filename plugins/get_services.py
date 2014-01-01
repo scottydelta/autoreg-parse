@@ -79,7 +79,7 @@ def getPlugin(reg_sys, reg_nt='', reg_soft=''):
     print ("\n" + ("=" * 51) + "\nTYPE 2 SERVICES NOT IN SYSTEM32\n" + ("=" * 51))
     for sname, ltime, ipath, dispname in izip(autostart_dict['ServiceName'], autostart_dict['WriteTime'], autostart_dict['ImagePath'], autostart_dict['DisplayName']):
         if "system32" not in ipath.lower():
-            print 'Display: {0:<10}\nName: {1:<10}\nPath: {2:<10}\nTime: {3}\n'.format(dispname, sname, ipath.encode('ascii', 'ignore'), ltime)
+            print 'Disp: {0:<10}\nName: {1:<10}\nPath: {2:<10}\nTime: {3}\n'.format(dispname, sname, ipath.encode('ascii', 'ignore'), ltime)
         else:
             pass
 
