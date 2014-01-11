@@ -9,21 +9,12 @@ def getPlugin(reg_soft, reg_nt, reg_sys):
                      "Microsoft\\Windows\\CurrentVersion\\RunOnce",
                      "Microsoft\\Windows\\CurrentVersion\\RunOnceEx",
                      "Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run",
-                     "Microsoft\\Active Setup\\Installed Components",
-                     # "Microsoft\Windows\CurrentVersion\ShellServiceObjectDelayLoad",
-                     # "Microsoft\\Windows\\CurrentVersion\\Authentication\\Credential Providers",
                      "Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run",
-                     "Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
-                     "Wow6432Node\\Microsoft\\Active Setup\\Installed Components",
-                     "Microsoft\\Windows\\CurrentVersion\\Explorer\\SharedTaskScheduler",
-                     "Classes\\Protocols\\Handler",
-                     "Classes\\*\\ShellEx\\ContextMenuHandlers"]
+                     "Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce"]
 
     ntuser_run_list = ["Software\\Microsoft\\Windows\\CurrentVersion\\Run",
                        "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
                        "Software\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce",
-                       "Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows",
-                       #"Software\\Wow6432Node\\Microsoft\\Active Setup\\InstalledComponents",
                        "Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run"]
 
     try:
