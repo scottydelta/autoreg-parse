@@ -38,36 +38,21 @@ parser.add_argument('-sys', '--system', help='Path to the SYSTEM hive you want p
 parser.add_argument('-soft', '--software', help='Path to the SOFTWARE hive you want parsed')
 parser.add_argument('-p', '--plugin', nargs='+', help='Specify plugin your plugin name')
 
-args = parser.parse_args()
-
-if args.ntuser:
-    reg_nt = Registry.Registry(args.ntuser)
-else:
-    reg_nt = ''
-    pass
-if args.software:
-    reg_soft = Registry.Registry(args.software)
-else:
-    reg_soft = ''
-    pass
-if args.system:
-    reg_sys = Registry.Registry(args.system)
-else:
-    reg_sys = ''
-    pass
-
-if not args.plugin:
-    print parser.usage
-    exit(0)
-
 def main():
-    for plugin_name in args.plugin:
-        plugin_filename = 'get_' + plugin_name
+    args = parser.parse_args()
+    reg_nt = Registry.Registry(args.ntuser) if args.ntuser else ""
+    reg_soft = Registry.Registry(args.software) if args.software else ""
+    reg_sys = Registry.Registry(args.system) if args.system else ""
+    #if not args.plugin:
+    #    print parser.usage
+    #    exit(0)
     try:
+        plugin_filename = 'get_' + args.plugin[0]
         sys.path.insert(0, 'plugins')
         module = __import__(plugin_filename)
         module.getPlugin(reg_nt=reg_nt, reg_soft=reg_soft, reg_sys=reg_sys)
-    except:
+    except Exception as e:
+        print e
         print "No Plugin Found."
 if __name__ == "__main__":
     main()
